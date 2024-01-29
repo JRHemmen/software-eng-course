@@ -2,12 +2,6 @@
 
 ## Introduction to Software Engineering
 
-### **Session 1: Overview of Software Development**
-
-- Introduction to the software development lifecycle (SDLC)
-- Key differences between systems engineering and software engineering
-- The importance of software engineering in modern infrastructure
-
 ## Programming Languages
 
 ### **Session 2: High-Level Languages (Python, Go)**
@@ -27,29 +21,72 @@
 
 ## Web Development Basics
 
-### **Session 5: Introduction to Web Development**
+### Front-End Development
 
-- The structure of the web: clients, servers, and communication
-- Overview of HTML, CSS, and JavaScript
+#### **Session 5: Introduction to Front-End Development**
 
-### **Session 6: Deep Dive into HTML/CSS**
+- Overview of front-end web development and its role in creating user interfaces.
+- Basic technologies: HTML, CSS, and JavaScript.
+- Introduction to responsive design principles.
 
-- Understanding HTML tags and structure
-- Styling with CSS: selectors, properties, and layout techniques
+#### **Session 6: Deep Dive into HTML and CSS**
 
-### **Session 7: JavaScript and Dynamic Web Pages**
+- Understanding the structure and semantics of HTML.
+- Styling with CSS: selectors, box model, flexbox, and grid layouts.
+- Best practices for accessibility and SEO.
 
-- Basics of JavaScript programming
-- DOM manipulation and event handling
-- Fetch API for asynchronous data retrieval
+#### **Session 7: JavaScript for Dynamic Web Pages**
 
-## Advanced Web Technologies
+- Basics of JavaScript programming and its role in the DOM.
+- Event handling, DOM manipulation, and AJAX requests.
+- Introduction to front-end frameworks and libraries (e.g., React, Vue.js).
 
-### **Session 8: Communication Protocols and APIs**
+### Back-End Development
 
-- Understanding RESTful services and APIs
-- Introduction to gRPC and WebSockets
-- Choosing the right communication protocol for your project
+#### **Session 8: Introduction to Back-End Development**
+
+- Overview of back-end development and its role in web applications.
+- Understanding server-client architecture and HTTP protocol.
+- Introduction to server-side languages (e.g., Node.js, Python, Ruby).
+
+#### **Session 9: API Design and Development**
+
+- RESTful API concepts and best practices.
+- Introduction to GraphQL as an alternative to REST.
+- Authentication and authorization techniques (e.g., OAuth, JWT).
+
+#### **Session 10: WebSockets and Real-Time Communication**
+
+- Understanding WebSockets for full-duplex communication.
+- Use cases for real-time data exchange (e.g., chat applications, live updates).
+
+## Databases for Web Development
+
+### **Session 11: Introduction to Databases**
+
+- Overview of databases in web development.
+- Differences between SQL and NoSQL databases and their use cases.
+
+### **Session 12: SQL Databases**
+
+- Basics of SQL and relational database design.
+- CRUD operations and simple queries.
+- Introduction to transactions and data integrity.
+
+### **Session 13: NoSQL Databases**
+
+- Overview of NoSQL database types and their use cases.
+- **Document Stores**: Introduction to document-oriented databases (e.g., MongoDB) and their query languages.
+- **Key-Value Stores**: Understanding the use of key-value stores (e.g., Redis) for caching and fast data retrieval.
+- **Time-Series Databases**: Introduction to time-series databases (e.g., InfluxDB) and their applications in monitoring and IoT.
+
+## Wrap-Up and Future Directions
+
+### **Session 14: The Future of Web Development**
+
+- Emerging trends in web development (e.g., serverless architectures, microservices).
+- Discussion on the evolving landscape of web standards and technologies.
+- Resources for further learning and exploration in software engineering and web development.
 
 ## Software Ecosystems and Licensing
 
@@ -58,8 +95,6 @@
 - Comparison of proprietary vs open source software ecosystems
 - Overview of major players: Microsoft (.NET, C#), Oracle (Java), GNU, FSF
 - Understanding open source licenses and their implications
-
-## Wrap-Up and Future Directions
 
 ### **Session 10: The Future of Software Engineering**
 
