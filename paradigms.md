@@ -28,9 +28,9 @@
 ## Functional Programming
 
 - **Definition and Core Concepts**: Introducing functional programming as a paradigm centered around pure functions and avoiding shared state, mutable data, and side-effects.
+- **Pure Functions**: Emphasizing functions that always produce the same output for the same input without any side effects.
 - **Immutability**: Stressing the importance of immutable data structures that do not change once created.
 - **First-Class and Higher-Order Functions**: Exploring the concepts of functions as first-class citizens and the use of higher-order functions that can take functions as parameters or return them as results.
-- **Pure Functions**: Emphasizing functions that always produce the same output for the same input without any side effects.
 - **Recursion**: Demonstrating how problems can be solved via functions that call themselves, often as a cleaner alternative to traditional looping mechanisms.
 
 ## Object-Oriented Programming (OOP)
