@@ -2,8 +2,13 @@
 
 ## Compiled vs Interpreted Languages
 
-- **Compiled Languages**: Detailing how languages like C and C++ are translated into machine code before execution, allowing for optimized performance.
-- **Interpreted Languages**: Discussing languages like Python and JavaScript, which are translated on-the-fly during execution, offering flexibility and ease of use.
+- **Compiled Languages**: Languages like C and C++ are translated into machine code before execution, allowing for optimized performance. This catches errors early but requires recompilation for every change.
+- **Interpreted Languages**: Languages like Python and JavaScript are translated on-the-fly during execution, offering flexibility and ease of use. This is a great choice for beginners to get started quickly but is ultimately slower than compiled languages.
+
+[Compiled vs Interpreted Code Performance](https://medium.com/swlh/compiled-vs-interpreted-code-performance-e1a63299760b)
+
+- Go code 2 orders of magnitude faster than Python code
+- Pypy (JIT compiled Python) code 5x faster than native Python code
 
 ## Imperative vs Declarative Programming
 
