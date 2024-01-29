@@ -25,6 +25,8 @@
 - **Memory Leaks**: Identifying and preventing situations where memory is not correctly released back to the system.
 - **Pointers and References**: Delving into the use of pointers in low-level languages like C and references in higher-level languages to manipulate memory addresses directly.
 
+[See in Code](demos/godemo/internal/paradigms/memory.go)
+
 ## Functional Programming
 
 - **Definition and Core Concepts**: Introducing functional programming as a paradigm centered around pure functions and avoiding shared state, mutable data, and side-effects.
@@ -33,6 +35,8 @@
 - **First-Class and Higher-Order Functions**: Exploring the concepts of functions as first-class citizens and the use of higher-order functions that can take functions as parameters or return them as results.
 - **Recursion**: Demonstrating how problems can be solved via functions that call themselves, often as a cleaner alternative to traditional looping mechanisms.
 
+[See in Code](demos/godemo/internal/paradigms/functional.go)
+
 ## Object-Oriented Programming (OOP)
 
 - **Introduction to OOP**: Presenting OOP as a paradigm that models real-world entities as objects with state (data) and behavior (methods).
@@ -40,6 +44,8 @@
 - **Attributes and Methods**: Delving into how data (attributes) and functions (methods) are encapsulated within objects.
 - **Encapsulation**: Highlighting the encapsulation of data and methods within objects to hide the internal state and expose only necessary parts of the object interface.
 - **Inheritance and Polymorphism**: Exploring inheritance as a mechanism for creating new classes from existing ones and polymorphism as the ability for objects of different classes to be treated as objects of a common superclass.
+
+[See in Code](demos/godemo/internal/paradigms/oop.go)
 
 ## Low-Level Programming
 
