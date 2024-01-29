@@ -23,5 +23,6 @@
 ## **Session 7: API Design**
 
 - RESTful API concepts and best practices.
+- OpenAPI specification and Swagger UI.
 - Introduction to GraphQL as an alternative to REST.
 - Authentication and authorization techniques (e.g., OAuth, JWT).
