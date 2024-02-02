@@ -47,7 +47,6 @@
 
 [See in Code](demos/godemo/internal/paradigms/memory.go)
 
-
 ## Low-Level Programming
 
 - **Assembly Language**: Introducing assembly language as a low-level programming language that is a direct representation of machine code.
