@@ -25,12 +25,13 @@ Please search for and install the following extensions. You can do this by click
 
 ## Running an Existing Go Project
 
-```bash
-cd /path/to/jrhemmen/software-eng-course/demos/godemo
+To avoid any issues with the Go module system, it is recommended to open the specific demo folder (`$reporoot/demos/godemo`) in VSCode before running the following commands.
 
-go build ./path/to/your/main.go
-# or to build and run
-go run ./path/to/your/main.go
+```bash
+# to compile
+go build cmd/godemo/main.go
+# or to compile and run
+go run cmd/godemo/main.go
 ```
 
 ## Creating a New Go Project
