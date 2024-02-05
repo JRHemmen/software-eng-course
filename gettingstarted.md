@@ -3,16 +3,16 @@
 ## Prerequisites
 
 - Install [VSCode](https://code.visualstudio.com/) and the following extensions (`Ctrl+Shift+X`)
-  - [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
-  - [Powershell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
-  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-  - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-  - [OpenAPI (Swagger) Editor](https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi)
-  - [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+  - [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go) for Go language support
+  - [Powershell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell) for Powershell support
+  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) for HTML/CSS/JS live preview
+  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) for Markdown support
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) for code formatting/linting
+  - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) for inline commit history
+  - [OpenAPI (Swagger) Editor](https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi) for OpenAPI support
+  - [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) for opening code on a remote machine, container, or WSL
 - Install [Go Language](https://golang.org/)
-- Install [Postman](https://www.postman.com/)
+- Install [Postman](https://www.postman.com/) for API testing
 - Install [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) (Windows only, **optional**)
 - [Create an account](https://github.com/signup) on GitHub
 - [Create a Personal Access Token](https://github.com/settings/tokens/new) on GitHub
