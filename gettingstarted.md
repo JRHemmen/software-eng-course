@@ -6,13 +6,14 @@
 - Install [VSCode](https://code.visualstudio.com/)
 - Install [Go Language](https://golang.org/)
 - Install WSL2 (Optional)
-- Create an account on Github.com
-- Clone the repository using VSCode
+- [Create an account](https://github.com/signup) on GitHub
+- [Fork the repository](https://github.com/JRHemmen/software-eng-course/fork) to your own account
+- Clone the forked repo to your local machine using VSCodes command palette (Ctrl+Shift+P) and the command `Git: Clone`
 - Attempt to run the code
 
 ### VSCode Extensions
 
-Please search for and install the following extensions:
+Please search for and install the following extensions. You can do this by clicking on the Extensions icon on the left side of the window or by pressing `Ctrl+Shift+X` and searching for the extension name.
 
 - Golang
 - Powershell
