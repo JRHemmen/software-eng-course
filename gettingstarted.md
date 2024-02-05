@@ -4,24 +4,28 @@
 
 - Install [Postman](https://www.postman.com/)
 - Install [VSCode](https://code.visualstudio.com/)
+  - Search for and install the following extensions (`Ctrl+Shift+X`)
+    - [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
+    - [Powershell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+    - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+    - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+    - [OpenAPI (Swagger) Editor](https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi)
+    - [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 - Install [Go Language](https://golang.org/)
-- Install WSL2 (Optional)
+- Install [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) (Windows only, **optional**)
 - [Create an account](https://github.com/signup) on GitHub
+- [Create a Personal Access Token](https://github.com/settings/tokens/new) on GitHub
+  - Select the `repo` scope
+  - Copy the token to a safe place
 - [Fork the repository](https://github.com/JRHemmen/software-eng-course/fork) to your own account
-- Clone the forked repo to your local machine using VSCodes command palette (Ctrl+Shift+P) and the command `Git: Clone`
+- Clone the forked repo to your local machine
+  - Open the VSCode command pallette `(Ctrl+Shift+P)` and use command `Git: Clone`
+  - Use the URL of your forked repository
+  - Choose a location on your local machine
+  - Provide your Github username and Token (not your password) when prompted
 - Attempt to run the code
-
-### VSCode Extensions
-
-Please search for and install the following extensions. You can do this by clicking on the Extensions icon on the left side of the window or by pressing `Ctrl+Shift+X` and searching for the extension name.
-
-- Golang
-- Powershell
-- Live Server
-- Markdown All in One
-- Prettier
-- GitLens
-- OpenAPI (Swagger) Editor
 
 ## Running an Existing Go Project
 
