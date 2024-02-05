@@ -2,18 +2,17 @@
 
 ## Prerequisites
 
-- Install [Postman](https://www.postman.com/)
-- Install [VSCode](https://code.visualstudio.com/)
-  - Search for and install the following extensions (`Ctrl+Shift+X`)
-    - [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
-    - [Powershell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
-    - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-    - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
-    - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-    - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
-    - [OpenAPI (Swagger) Editor](https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi)
-    - [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+- Install [VSCode](https://code.visualstudio.com/) and the following extensions (`Ctrl+Shift+X`)
+  - [Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)
+  - [Powershell](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+  - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+  - [OpenAPI (Swagger) Editor](https://marketplace.visualstudio.com/items?itemName=42Crunch.vscode-openapi)
+  - [Remote Development Extension Pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 - Install [Go Language](https://golang.org/)
+- Install [Postman](https://www.postman.com/)
 - Install [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) (Windows only, **optional**)
 - [Create an account](https://github.com/signup) on GitHub
 - [Create a Personal Access Token](https://github.com/settings/tokens/new) on GitHub
@@ -24,12 +23,12 @@
   - Open the VSCode command pallette `(Ctrl+Shift+P)` and use command `Git: Clone`
   - Use the URL of your forked repository
   - Choose a location on your local machine
-  - Provide your Github username and Token (not your password) when prompted
+  - Provide your Github username and Token (**not password**) when prompted
 - Attempt to run the code
 
 ## Running an Existing Go Project
 
-To avoid any issues with the Go module system, it is recommended to open the specific demo folder (`$reporoot/demos/godemo`) in VSCode before running the following commands.
+To avoid any issues with the Go module system, it is recommended to open the specific demo folder (`$reporoot/demos/godemo`) in VSCode before running the following commands. This is due to the fact that the Go module system requires the `go.mod` file to be in the root of the project (Not nested inside a demos folder).
 
 ```bash
 # to compile
