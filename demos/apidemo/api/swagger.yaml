@@ -1,0 +1,211 @@
+openapi: '3.0.2'
+info:
+  title: MyFirstGoAPI
+  version: '1.0'
+servers:
+  - url: https://localhost/api/v1
+tags:
+  - name: vm
+    description: VM operations
+  - name: hypervisor
+    description: Hypervisor operations
+  - name: cluster
+    description: Cluster operations
+paths:
+  /vms:
+    get:
+      tags:
+        - vm
+      summary: List all VMs
+      parameters:
+        - name: cpucores
+          in: query
+          required: false
+          description: Filter VMs by number of CPU cores
+          schema:
+            type: integer
+        - name: memoryGb
+          in: query
+          required: false
+          description: Filter VMs by amount of memory in GB
+          schema:
+            type: integer
+        - name: vlan
+          in: query
+          required: false
+          description: Filter VMs by VLAN ID
+          schema:
+            type: string
+        - name: cluster
+          in: query
+          required: false
+          description: Filter VMs by cluster name
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A filtered list of VMs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/vm'
+        '204':
+          description: No VMs found
+        '500':
+          description: Internal server error
+    post:
+      tags:
+        - vm
+      summary: Create a VM
+      requestBody:
+        description: VM object to be added
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/vm'
+      responses:
+        '201':
+          description: VM created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/vm'
+        '400':
+          description: Invalid input
+        '500':
+          description: Internal server error
+        '503':
+          description: Insufficient resources
+  /vms/{name}:
+    get:
+      tags:
+        - vm
+      summary: Get a VM by name
+      parameters:
+        - name: name
+          in: path
+          required: true
+          description: Name of the VM
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A single VM
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/vm'
+        '404':
+          description: VM not found
+        '500':
+          description: Internal server error'
+
+components:
+  schemas:
+    vm:
+      type: object
+      properties:
+        uuid:
+          type: string
+          description: Unique identifier for the VM
+        name:
+          type: string
+          description: Name of the VM
+        description:
+          type: string
+        cpucores:
+          type: integer
+          description: Number of CPU cores
+        memoryGb:
+          type: integer
+          description: Amount of memory in GB
+        disksGb:
+          type: array
+          items:
+            type: integer
+          description: List of disk sizes in GB
+        vlan:
+          type: string
+          description: VLAN ID
+        hypervisor:
+          type: string
+          description: Hypervisor name
+        created:
+          type: string
+          format: date-time
+        updated:
+          type: string
+          format: date-time
+      required:
+        - name
+        - cpucores
+        - memoryGb
+        - disksGb
+    hypervisor:
+      type: object
+      properties:
+        uuid:
+          type: string
+          description: Unique identifier for the hypervisor
+        name:
+          type: string
+          description: Name of the hypervisor
+        description:
+          type: string
+        cpusockets:
+          type: integer
+          description: Number of CPU sockets
+        cpucores:
+          type: integer
+          description: Number of CPU cores per socket
+        memoryGb:
+          type: integer
+          description: Amount of memory in GB
+        cluster:
+          type: string
+          description: Parent cluster uuid
+        created:
+          type: string
+          format: date-time
+        updated:
+          type: string
+          format: date-time
+      required:
+        - name
+        - cpusockets
+        - cpucores
+        - memoryGb
+        - cluster
+    cluster:
+      type: object
+      properties:
+        uuid:
+          type: string
+          description: Unique identifier for the cluster
+        name:
+          type: string
+          description: Name of the cluster
+        description:
+          type: string
+        hypervisors:
+          type: array
+          items:
+            type: string
+          description: List of hypervisor uuids
+        vlans:
+          type: array
+          items:
+            type: string
+          description: List of VLAN IDs
+        created:
+          type: string
+          format: date-time
+        updated:
+          type: string
+          format: date-time
+      required:
+        - name
+        - hypervisors
+        - vlans
