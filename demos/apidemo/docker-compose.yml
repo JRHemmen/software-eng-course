@@ -1,0 +1,19 @@
+version: '3.6'
+services:
+  mongo:
+    image: mongo
+    container_name: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongouser1
+      MONGO_INITDB_ROOT_PASSWORD: password123
+    ports:
+      - 27017:27017
+    volumes:
+      - ./dockerdata/mongo/data:/data/db
+    networks:
+      demo_br0:
+
+networks:
+  demo_br0:
+    driver: bridge
