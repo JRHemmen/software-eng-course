@@ -14,7 +14,7 @@
 - Install [Go Language](https://golang.org/)
 - Install [Postman](https://www.postman.com/) for API testing
 - Install [Docker Desktop](https://www.docker.com/products/docker-desktop) for quickly testing dbs and apis
-- Install [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) (Windows only, **optional**)
+- Install [MongoDB Compass](https://www.mongodb.com/try/download/compass) for a GUI to interact with MongoDB
 - [Create an account](https://github.com/signup) on GitHub
 - [Create a Personal Access Token](https://github.com/settings/tokens/new) on GitHub
   - Select the `repo` scope
