@@ -97,5 +97,6 @@ func StartRoutes() {
 		r.Post("/api/v1/clusters", ClustersPost)
 	})
 
+	println("API server started on port 8080")
 	http.ListenAndServe("0.0.0.0:8080", r)
 }
